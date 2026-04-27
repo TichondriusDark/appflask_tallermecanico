@@ -11,5 +11,19 @@ def infoempleado(id):
     }
     return empleado
 
+
+
+@taller.route("/stockrepuestos")
+def cant_stock():
+    repuestos = {
+        "Bujía": 15,
+        "Manguera de Agua": 13,
+        "Llantas": 22,
+        "Válvulas": 5,
+        "Pistones": 8,
+        "Inyectores": 10
+    }
+    return repuestos
+
 if __name__=="__main__":
     taller.run(debug=True)
